@@ -1,0 +1,100 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(182, 220, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(212, 223, 231);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#Ctop {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(139, 190, 224);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30%;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.valDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  background-color: rgb(170, 208, 233);
+  border-radius: 3px;
+}
+
+.bubble {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(139, 190, 224);
+  cursor: pointer;
+}
+
+.bubble:hover {
+  background-color: rgb(59, 160, 228);
+}
+
+#Cbot {
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 11px;
+  height: calc(100% - 100px);
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .label {
+    font-size: 0.8rem;
+    
+  }
+  #Ctop {
+    gap: 10px;
+    /* padding: 0px 0px; */
+    justify-content: center;
+  }
+  #Cbot {
+    font-size: .8rem;
+  }
+}
